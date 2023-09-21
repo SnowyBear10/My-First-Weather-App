@@ -1,0 +1,36 @@
+h2 {
+  position: relative;
+  top: -54px;
+  left: 140px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 24px;
+}
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.weather-app {
+  max-width: 600px;
+}
+
+.search {
+  margin: 40px 0;
+}
+
+.units {
+  position: relative;
+  top: -12px;
+  font-size: 15px;
+}
+
+li.favorites {
+  display: inline-block;
+  padding: 0px 20px 0 5px;
+}

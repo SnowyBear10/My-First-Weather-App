@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>SheCodes Plus, Week 5 Homework</title>
+  </head>
+  <body>
+    <div class="container border p-4 m-2 rounded-4 weather-app">
+      <form id="search-form">
+        <div class="row">
+          <div class="col-3 mb-3 search">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter a city"
+              autocomplete="off"
+              autofocus="on"
+              id="search-text-input"
+            />
+          </div>
+          <div class="col-3 mb-3 search">
+            <input type="submit" value="Search" class="btn btn-primary" />
+          </div>
+          <div class="col-3 mb-3 search">
+            <input
+              type="button"
+              value="Current Location"
+              class="btn btn-success"
+              id="current-location"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="current-info">
+        <h1>
+          <span>☀️ </span>
+          <span class="temperature" id="temperature">70</span>
+          <span class="units">
+            <a href="#" id="fahrenheit-link">°F</a>
+            |
+            <a href="#" id="celsius-link">°C</a>
+          </span>
+        </h1>
+      </div>
+      <h2 id="city">Bellingham</h2>
+      <h2 class="current"></h2>
+      <h6>Humidity: <span id="humidity"> 2</span>%</h6>
+      <h6>Wind: <span id="wind"> 11</span>mph</h6>
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            Wed <br />
+            ⛅
+            <br />
+            67F
+          </div>
+          <div class="col-1">Thurs <br />☀️ <br />75F</div>
+          <div class="col-1">
+            Fri <br />
+            ⛅
+            <br />
+            76F
+          </div>
+          <div class="col-1">
+            Sat <br />☀️
+            <br />
+            82F
+          </div>
+          <div class="col-1">
+            Sun <br />☀️
+            <br />
+            83F
+          </div>
+        </div>
+      </div>
+      <br />
+      <p>
+        <strong>Favorites </strong>
+      </p>
+      <ul>
+        <li class="favorites">St. Petersburg, FL</li>
+        <li class="favorites">Washington D.C.</li>
+        <li class="favorites">Denver, CO</li>
+        <li class="favorites">Haifa, Israel</li>
+      </ul>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
